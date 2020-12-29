@@ -11,12 +11,13 @@ This could be a great spot to explore CSSanimation!
 Add some JavaScript if your new feature needs it.  */
 body {
   background: #ecf3f3;
+  margin: 0 auto;
 }
 
 main {
   background-color: #8B4513;
   max-width: 700px;
-  min-height: 300px;
+  min-height: 400px;
   border-color: gold;
   border-style: solid;
   border-radius: 10px;
@@ -24,6 +25,7 @@ main {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  margin-top: 20%;
 }
 
 h1, h3 {
@@ -38,13 +40,21 @@ h1, h3 {
   border-color: grey;
   border-style: solid;
   max-width: 600px;
-  min-width: 80%
+  min-width: 80%;
+  padding-top: 10%;
 }
 .dials-container {
   max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 5%;
+
 }
 .tv-dial {
   background-color: black;
+  font-size: .5em;
+  text-align: center;
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -53,13 +63,45 @@ h1, h3 {
   border-width: thick;
 }
 
+.dial-name {
+    color: white;
+    opacity: 0.6;
+    padding-top: 10%;
+}
+
+.dial-2 {
+  margin-top: 3px;
+}
+
+.logo-container {
+  margin-top: auto;
+  padding-left: 5px;
+}
+
 .turing-logo {
-height: 50%;
-width: 50%;
+height: 40px;
+width: 40px;
 }
 
 .countdown-dhms {
   display: flex;
   justify-content: space-around;
-  /* min-width: 80%: */
+}
+
+.tv-stand {
+  height: auto;
+  width:auto;
+  display: flex;
+  justify-content: center;
+
+}
+.tv-foot1, .tv-foot2 {
+  background-color: #8B4513;
+  width: 20px;
+  height: 50px;
+  border-radius: 0% 0% 40% 40%;
+}
+
+.tv-foot1 {
+  margin-right: 40%;
 }
