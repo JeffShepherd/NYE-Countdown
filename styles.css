@@ -9,3 +9,57 @@ Is it clean and understandable? How are your naming conventions?
 If you're looking for more, add some other features to this app.
 This could be a great spot to explore CSSanimation!
 Add some JavaScript if your new feature needs it.  */
+body {
+  background: #ecf3f3;
+}
+
+main {
+  background-color: #8B4513;
+  max-width: 700px;
+  min-height: 300px;
+  border-color: gold;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px 30px 10px 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.tv-screen {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border-width: medium;
+  border-color: grey;
+  border-style: solid;
+  max-width: 600px;
+  min-width: 80%
+}
+.dials-container {
+  max-width: 20%;
+}
+.tv-dial {
+  background-color: black;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border-style: ridge;
+  border-color: grey;
+  border-width: thick;
+}
+
+.turing-logo {
+height: 50%;
+width: 50%;
+}
+
+.countdown-dhms {
+  display: flex;
+  justify-content: space-around;
+  /* min-width: 80%: */
+}
