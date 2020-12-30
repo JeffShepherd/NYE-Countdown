@@ -21,7 +21,10 @@ function determineRemaining() {
   var seconds = Math.floor((distance % minute) / second);
 
   return {
-    days, hours, minutes, seconds
+    days,
+    hours,
+    minutes,
+    seconds
   }
 }
 
@@ -35,3 +38,22 @@ function showRemaining() {
 }
 
 timer = setInterval(showRemaining, 1000);
+
+var background = document.querySelector('body');
+var tvScreen = document.querySelector('.tv-screen');
+var getWeirdButton = document.querySelector('.get-weird-button');
+
+getWeirdButton.addEventListener('click', changeBackground);
+var counter = 0;
+
+function changeBackground() {
+  background.classList.toggle('glitter');
+  tvScreen.classList.toggle('weird-gif');
+  if (counter === 0) {
+    getWeirdButton.innerHTML = 'Too much weird!';
+    counter += 1;
+  } else {
+    getWeirdButton.innerHTML = "Let's Get Weird";
+    counter = 0;
+  }
+}
